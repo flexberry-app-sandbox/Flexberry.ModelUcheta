@@ -1,0 +1,166 @@
+import $ from 'jquery';
+import EmberFlexberryTranslations from 'ember-flexberry/locales/en/translations';
+
+import IISModelUchetaДирОтдПоРабСКлLForm from './forms/i-i-s-model-ucheta-дир-отд-по-раб-с-кл-l';
+import IISModelUchetaДлительностьLForm from './forms/i-i-s-model-ucheta-длительность-l';
+import IISModelUchetaДоговорLForm from './forms/i-i-s-model-ucheta-договор-l';
+import IISModelUchetaЗатрВремяLForm from './forms/i-i-s-model-ucheta-затр-время-l';
+import IISModelUchetaКлиентLForm from './forms/i-i-s-model-ucheta-клиент-l';
+import IISModelUchetaРасчетОстВремLForm from './forms/i-i-s-model-ucheta-расчет-ост-врем-l';
+import IISModelUchetaУслугиLForm from './forms/i-i-s-model-ucheta-услуги-l';
+import IISModelUchetaДирОтдПоРабСКлEForm from './forms/i-i-s-model-ucheta-дир-отд-по-раб-с-кл-e';
+import IISModelUchetaДлительностьEForm from './forms/i-i-s-model-ucheta-длительность-e';
+import IISModelUchetaДоговорEForm from './forms/i-i-s-model-ucheta-договор-e';
+import IISModelUchetaЗатрВремяEForm from './forms/i-i-s-model-ucheta-затр-время-e';
+import IISModelUchetaКлиентEForm from './forms/i-i-s-model-ucheta-клиент-e';
+import IISModelUchetaРасчетОстВремEForm from './forms/i-i-s-model-ucheta-расчет-ост-врем-e';
+import IISModelUchetaУслугиEForm from './forms/i-i-s-model-ucheta-услуги-e';
+import IISModelUchetaДлительностьModel from './models/i-i-s-model-ucheta-длительность';
+import IISModelUchetaДоговорModel from './models/i-i-s-model-ucheta-договор';
+import IISModelUchetaКлиентModel from './models/i-i-s-model-ucheta-клиент';
+import IISModelUchetaОказУслугModel from './models/i-i-s-model-ucheta-оказ-услуг';
+import IISModelUchetaРасчетОстВремModel from './models/i-i-s-model-ucheta-расчет-ост-врем';
+import IISModelUchetaУслугиModel from './models/i-i-s-model-ucheta-услуги';
+import ДиректорModel from './models/директор';
+import Затраченное времяModel from './models/затраченное-время';
+
+const translations = {};
+$.extend(true, translations, EmberFlexberryTranslations);
+
+$.extend(true, translations, {
+  models: {
+    'i-i-s-model-ucheta-длительность': IISModelUchetaДлительностьModel,
+    'i-i-s-model-ucheta-договор': IISModelUchetaДоговорModel,
+    'i-i-s-model-ucheta-клиент': IISModelUchetaКлиентModel,
+    'i-i-s-model-ucheta-оказ-услуг': IISModelUchetaОказУслугModel,
+    'i-i-s-model-ucheta-расчет-ост-врем': IISModelUchetaРасчетОстВремModel,
+    'i-i-s-model-ucheta-услуги': IISModelUchetaУслугиModel,
+    'директор': ДиректорModel,
+    'затраченное-время': Затраченное времяModel
+  },
+
+  'application-name': 'Model ucheta',
+
+  forms: {
+    loading: {
+      'spinner-caption': 'Loading stuff, please wait for a moment...'
+    },
+    index: {
+      greeting: 'Welcome to ember-flexberry test stand!'
+    },
+
+    application: {
+      header: {
+        menu: {
+          'sitemap-button': {
+            title: 'Menu'
+          },
+          'user-settings-service-checkbox': {
+            caption: 'Use service to save user settings'
+          },
+          'show-menu': {
+            caption: 'Show menu'
+          },
+          'hide-menu': {
+            caption: 'Hide menu'
+          },
+          'language-dropdown': {
+            caption: 'Application language',
+            placeholder: 'Choose language'
+          }
+        },
+        login: {
+          caption: 'Login'
+        },
+        logout: {
+          caption: 'Logout'
+        }
+      },
+
+      footer: {
+        'application-name': 'Model ucheta',
+        'application-version': {
+          caption: 'Addon version {{version}}',
+          title: 'It is version of ember-flexberry addon, which uses in this dummy application ' +
+          '(npm version + commit sha). ' +
+          'Click to open commit on GitHub.'
+        }
+      },
+
+      sitemap: {
+        'application-name': {
+          caption: 'Model ucheta',
+          title: 'Model ucheta'
+        },
+        'application-version': {
+          caption: 'Addon version {{version}}',
+          title: 'It is version of ember-flexberry addon, which uses in this dummy application ' +
+          '(npm version + commit sha). ' +
+          'Click to open commit on GitHub.'
+        },
+        index: {
+          caption: 'Home',
+          title: ''
+        },
+        'model-ucheta': {
+          caption: 'ModelUcheta',
+          title: 'ModelUcheta',
+          'i-i-s-model-ucheta-услуги-l': {
+            caption: 'Услуги',
+            title: ''
+          },
+          'i-i-s-model-ucheta-затр-время-l': {
+            caption: 'Затр время',
+            title: ''
+          },
+          'i-i-s-model-ucheta-длительность-l': {
+            caption: 'Длительность',
+            title: ''
+          },
+          'i-i-s-model-ucheta-клиент-l': {
+            caption: 'Клиент',
+            title: ''
+          },
+          'i-i-s-model-ucheta-дир-отд-по-раб-с-кл-l': {
+            caption: 'Дир отд по раб с кл',
+            title: ''
+          },
+          'i-i-s-model-ucheta-расчет-ост-врем-l': {
+            caption: 'Расчет ост врем',
+            title: ''
+          },
+          'i-i-s-model-ucheta-договор-l': {
+            caption: 'Договор',
+            title: ''
+          }
+        }
+      }
+    },
+
+    'edit-form': {
+      'save-success-message-caption': 'Save operation succeed',
+      'save-success-message': 'Object saved',
+      'save-error-message-caption': 'Save operation failed',
+      'delete-success-message-caption': 'Delete operation succeed',
+      'delete-success-message': 'Object deleted',
+      'delete-error-message-caption': 'Delete operation failed'
+    },
+    'i-i-s-model-ucheta-дир-отд-по-раб-с-кл-l': IISModelUchetaДирОтдПоРабСКлLForm,
+    'i-i-s-model-ucheta-длительность-l': IISModelUchetaДлительностьLForm,
+    'i-i-s-model-ucheta-договор-l': IISModelUchetaДоговорLForm,
+    'i-i-s-model-ucheta-затр-время-l': IISModelUchetaЗатрВремяLForm,
+    'i-i-s-model-ucheta-клиент-l': IISModelUchetaКлиентLForm,
+    'i-i-s-model-ucheta-расчет-ост-врем-l': IISModelUchetaРасчетОстВремLForm,
+    'i-i-s-model-ucheta-услуги-l': IISModelUchetaУслугиLForm,
+    'i-i-s-model-ucheta-дир-отд-по-раб-с-кл-e': IISModelUchetaДирОтдПоРабСКлEForm,
+    'i-i-s-model-ucheta-длительность-e': IISModelUchetaДлительностьEForm,
+    'i-i-s-model-ucheta-договор-e': IISModelUchetaДоговорEForm,
+    'i-i-s-model-ucheta-затр-время-e': IISModelUchetaЗатрВремяEForm,
+    'i-i-s-model-ucheta-клиент-e': IISModelUchetaКлиентEForm,
+    'i-i-s-model-ucheta-расчет-ост-врем-e': IISModelUchetaРасчетОстВремEForm,
+    'i-i-s-model-ucheta-услуги-e': IISModelUchetaУслугиEForm
+  },
+
+});
+
+export default translations;

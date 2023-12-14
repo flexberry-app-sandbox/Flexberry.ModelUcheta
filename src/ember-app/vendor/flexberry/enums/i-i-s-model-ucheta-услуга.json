@@ -1,0 +1,9 @@
+﻿{
+  "nameSpace": "IIS.ModelUcheta",
+  "className": "Услуга",
+  "enumObjects": {
+    "ПомПровДок": "",
+    "ПомЗакрМес": "",
+    "РешУстнВопр": ""
+  }
+}

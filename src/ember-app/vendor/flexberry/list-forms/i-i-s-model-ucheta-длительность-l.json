@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-model-ucheta-длительность-e",
+  "editForm": "i-i-s-model-ucheta-длительность-e",
+  "external": false,
+  "caption": "Длительность",
+  "name": "IISModelUchetaДлительностьL",
+  "className": "ДлительностьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-model-ucheta-длительность",
+      "modelProjection": "ДлительностьL"
+    }
+  ]
+}

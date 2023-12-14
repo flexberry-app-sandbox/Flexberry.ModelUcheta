@@ -1,0 +1,1 @@
+docker-compose -p modelucheta-java up -d

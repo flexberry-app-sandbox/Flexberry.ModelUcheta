@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.ModelUcheta",
+  "className": "Статус",
+  "enumObjects": {
+    "Расторжен": "",
+    "Заключен": ""
+  }
+}

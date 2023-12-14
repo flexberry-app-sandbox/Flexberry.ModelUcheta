@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>ModelUcheta.model.Uslugi</class>
+        <class>ModelUcheta.model.ZatrVremya</class>
+        <class>ModelUcheta.model.Dlitelnost</class>
+        <class>ModelUcheta.model.Klient</class>
+        <class>ModelUcheta.model.DirOtdPoRabSKl</class>
+        <class>ModelUcheta.model.OkazUslug</class>
+        <class>ModelUcheta.model.RaschetOstVrem</class>
+        <class>ModelUcheta.model.Dogovor</class>
+        <class>ModelUcheta.model.FlexberryAdvLimit</class>
+        <class>ModelUcheta.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>ModelUcheta.model.NewPlatformFlexberryServicesLock</class>
+        <class>ModelUcheta.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>
